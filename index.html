@@ -1,9 +1,7 @@
 <html>
     <head>
-        <title>Main Street Deli & Grocery | Menu</title>
-        <meta name="description" content="Main Street Deli & Grocery. Address: 240 Main St, Keansburg, NJ 07734. Phone: 7324710040. Email: msdkeansburg@gmail.com. Popular Items: Titan Tower, Mighty Mustang">
-        <meta name="google-site-verification" content="V93J0DnYK5njQtUgZ5WDvXd8WDP4qwWFf4X5WvMtG1U" />
-        
+        <title>Main Street Deli | Menu</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -25,15 +23,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        
         <style>
+
             /* .container{
                 width: 90%;
             } */
             .logo-bar{
-                /* background-color: coral; */
+                background-color: white;
+                padding-top:20px;
+                /* padding-left:20px; */
+                /* border-bottom: 0.1px solid lightgrey; */
             }
             .logo{
                 font-family: 'Anton', sans-serif;
@@ -75,6 +78,13 @@
                 background-color: red;
                 padding: 4px;
             }
+            .sub-main{
+                /* margin-top:30vh; */
+                
+            }
+            row{
+                /* background-color: black; */
+            }
             .button{
                 width:32.7%;
                 color: white;
@@ -84,19 +94,34 @@
             body{
                 font-family: 'Signika Negative', sans-serif;
             }
+            .menu-heading-div{
+                /* backdrop-filter: grayscale(0.5) opacity(0.1); */
+                /* filter: blur(4px); */
+
+            }
             .menu-heading{
                 /* text-align: center; */
                 color: teal;
                 font-size: min(max(30px, 7vw), 50px);
                 /* padding: 10px; */
                 background-color: white;
+                padding-top:15px;
+                /* position:sticky; */
+                /* background-color: rgba(0,0,0,0.1); 
+                -webkit-backdrop-filter: blur(50px);
+                backdrop-filter: blur(50px);  */
+            }
+            .menu-div-content{
+                /* background-color: black; */
+                padding-left:20px;
+                padding-right:20px;
             }
             .left{
                 float: left;
                 margin-left: 10px;
             }
             hr{
-                margin-left: 10px;
+                /* margin-left: 10px; */
             }
             .right{
                 float: right;
@@ -106,6 +131,9 @@
             }
             .modal-content{
                 padding:10px;
+            }
+            .popular-item-heading{
+                padding-bottom:15px;
             }
             .popular-items-images{
                 /* position: relative;
@@ -126,18 +154,27 @@
             bottom: 8px;
             left: 16px;
             }
+            th, td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .footer-div{
+                margin-top:20px;
+                padding:2%;
+                background-color: black;
+                color: white;
+            }
             
         </style>
 
     </head>
     <body>
+
         <div class="container">
-            <div class="logo-bar fixed-top">
-            <br>
+            <div class=" logo-bar">
                 <h1 class="logo">Main Street Deli & Grocery</h1>
 
                 <div class="logo-info">
-
 
                     <script>
                         var today = new Date();
@@ -153,10 +190,11 @@
                         // var b=6;
                         // document.write(day);
                         // document.write(hour);
+
                         if(day>=0 && day<=4){
                             if(hour >= 5 && hour < 21){
                             document.write(
-                            "<h3 class='open-sign'>OPEN</h3> <br>"
+                            "<h3 class='open-sign'>OPEN</h3><br>"
                             );
                             }
                             else if (hour >= 21 && hour <22){
@@ -241,6 +279,7 @@
                         <script></script>
                     </form>
                     </div>
+                    <!-- <hr> -->
                 </div>
 
                 <!-- <div class="row">
@@ -262,10 +301,12 @@
             </div>
             
 
-            <div>
-                <br>
-                <h3 class="menu-heading sticky-top">Popular Items</h3>
-                <br>
+            <div class="sub-main">
+                <!-- <br> -->
+                <div class="menu-heading-div sticky-top">
+                <h3 class="menu-heading  popular-item-heading">Popular Items</h3>
+                </div>
+                
                 <div class="popular-items-images">
                     
                     <!-- <div> -->
@@ -285,7 +326,6 @@
                             <h5 class="popular-item-text">Mighty Mustang</h5>
                           </div>
                         </div>
-                    
                 </div>
             </div>
 
@@ -306,14 +346,13 @@
 
             <div class="">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 id="Breakfast" class="menu-heading sticky-top">Breakfast</h3>
-                        <br>
+                        <h3 id="Breakfast" class="menu-heading sticky-top">Breakfast <hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="menu-item"><p class="left">Bacon, Egg & Cheese <p class="right"> $4.99</p></p></p><br><hr>
+                            <!-- <p class="menu-item"><p class="left">Bacon, Egg & Cheese <p class="right"> $4.99</p></p></p><br><hr>
                             <p class="left">Beef Bacon Egg & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Turkey Bacon Egg & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Ham Egg & Cheese<p class="right">$9.99</p></p><br><hr>
@@ -321,27 +360,108 @@
                             <p class="left">Pork Roll Egg & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Bacon, Lettuce & Tomato<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Pancakes with Hashbrowns<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">French Toast with Hashbrowns<p class="right">$9.99</p></p><br><br>
+                            <p class="left">French Toast with Hashbrowns<p class="right">$9.99</p></p><br><br> -->
+
+
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Bacon, Egg & Cheese</td>
+                                    <td align="right">3.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Beef Bacon Egg & Cheese</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Turkey Bacon Egg & Cheese</td>
+                                    <td align="right">4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Ham Egg & Cheese</td>
+                                    <td align="right">4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Sausage Egg & Cheese</td>
+                                    <td align="right">3.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Pork Roll Egg & Cheese</td>
+                                    <td align="right">3.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacon, Lettuce & Tomato</td>
+                                    <td align="right">4.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Pancakes with Hashbrowns</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>French Toast with Hashbrowns</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                            </table>
+
+
+
+
+
                             
                         </div>
                     </div>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Appetizers</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Appetizers<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Jalapeno Poppers (6pcs.)<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Jalapeno Poppers (6pcs.)<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Mozzarella Sticks (6pcs.)<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Onion Rings<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Chicken Tenders<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Buffalo Wings (6pcs)<p class="right">$9.99</p></p><br><hr>
                             <p class="left">French Fries<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Hash Brown Patty (1pc)<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Chicken Fingers (4pcs.) & Fries<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Chicken Fingers (4pcs.) & Fries<p class="right">$9.99</p></p><br><br> -->
                             
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Jalapeno Poppers (6pcs.)</td>
+                                    <td align="right">4.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Mozzarella Sticks (6pcs.)</td>
+                                    <td align="right">4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Onion Rings</td>
+                                    <td align="right">4.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicken Tenders</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Buffalo Wings (6pcs)</td>
+                                    <td align="right">3.49</td>
+                                </tr>
+                                <tr>
+                                    <td>French Fries</td>
+                                    <td align="right">2.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Hash Brown Patty (1pc)</td>
+                                    <td align="right">1.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicken Fingers (4pcs.) & Fries</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                            </table>
+
+
                         </div>
                     </div>
                   </div>
@@ -351,33 +471,74 @@
 
             <div class="">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Homemade Salads</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Homemade Salads<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Coleslaw<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Coleslaw<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Potato Salad<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Macaroni Salad<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Tuna Salad<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Tuna Salad<p class="right">$9.99</p></p><br><br> -->
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Coleslaw</td>
+                                    <td align="right">3.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Potato Salad</td>
+                                    <td align="right">3.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Macaroni Salad</td>
+                                    <td align="right">3.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuna Salad</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                            </table>
+
                         </div>
                     </div>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Omelettes</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Omelettes<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Western Omelette<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Western Omelette<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Spanish Omelette<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Italian Omelette<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Breakfast Platter<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Pancake Platter<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Pancake Platter<p class="right">$9.99</p></p><br><br> -->
                             
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Western Omelette</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Spanish Omelette</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Italian Omelette</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Breakfast Platter</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pancake Platter</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                            </table>
+
                         </div>
                     </div>
                   </div>
@@ -386,32 +547,69 @@
 
             <div class="">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Wraps</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Wraps<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Tuna<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Tuna<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Ham & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Turkey & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Roast Beef & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Pepperoni & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Cheese Steak<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Bacon & Cheddar<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Bacon & Cheddar<p class="right">$9.99</p></p><br><br> -->
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Tuna</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Ham & Cheese</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Turkey & Cheese</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Roast Beef & Cheese</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pepperoni & Cheese</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Cheese Steak</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacon & Cheddar</td>
+                                    <td align="right">6.99</td>
+                                </tr>
+                            </table>
+
                             
                         </div>
                     </div>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Kids Special</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Kids Special<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Chicken Nuggets, Fries & Juice<p class="right"> $4.99</p></p><br><br>
+                            <!-- <p class="left">Chicken Nuggets, Fries & Juice<p class="right"> $4.99</p></p><br><br> -->
+                            
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Chicken Nuggets, Fries & Juice</td>
+                                    <td align="right">4.99</td>
+                                </tr>
+                            </table>
                             
                         </div>
                     </div>
@@ -422,14 +620,13 @@
 
             <div class="">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Hot Sub & Sandwiches</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Hot Sub & Sandwiches <hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Cheese Steak<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Cheese Steak<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Mighty Mustang<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Chicken Cutlet<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Chicken Parm<p class="right">$9.99</p></p><br><hr>
@@ -438,19 +635,88 @@
                             <p class="left">Roast Beef & Gravy<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Bacon & Cheddar<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Cheeseburger<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Hamburger<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Hamburger<p class="right">$9.99</p></p><br><br> -->
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr align="right">
+                                  <th align="right"></th>
+                                  <th align="right">Roll</th> 
+                                  <th align="right">Half Sub</th>
+                                  <th align="right">Whole Sub</th>
+                                </tr>
+                                <tr>
+                                  <td>Cheese Steak</td>
+                                  <td align="right"></td>
+                                  <td align="right">7.99</td>
+                                  <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                  <td>Mighty Mustang</td>
+                                  <td align="right"></td>
+                                  <td align="right">7.99</td>
+                                  <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicken Parm</td>
+                                    <td align="right"></td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Grilled Chicken</td>
+                                    <td align="right"></td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicken Cutlet</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                  </tr>
+                                <tr>
+                                    <td>Meatball</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Roast Beef & Gravy</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacon & Cheddar</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Cheeseburger</td>
+                                    <td align="right">3.99</td>
+                                    <td align="right">6.99</td>
+                                    <td align="right">10.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Hamburger</td>
+                                    <td align="right">3.99</td>
+                                    <td align="right">6.99</td>
+                                    <td align="right">10.99</td>
+                                </tr>
+                            </table>
+                              
                             
                         </div>
                     </div>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Cold Sub & Sandwiches</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Cold Sub & Sandwiches<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Boars Head Ham & Cheese<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Boars Head Ham & Cheese<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Boars Head Turkey & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Roast Beef & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Bologna & Cheese<p class="right">$9.99</p></p><br><hr>
@@ -461,8 +727,97 @@
                             <p class="left">Italain Sub<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Tuna & Cheese<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Cheese Lovers<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Veggie Lovers<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Veggie Lovers<p class="right">$9.99</p></p><br><br> -->
                             
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr align="right">
+                                  <th align="right"></th>
+                                  <th align="right">Roll</th> 
+                                  <th align="right">Half Sub</th>
+                                  <th align="right">Whole Sub</th>
+                                </tr>
+                                <tr>
+                                  <td>Boars Head Ham & Cheese</td>
+                                  <td align="right">5.49</td>
+                                  <td align="right">7.99</td>
+                                  <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                  <td>Roast Beef & Cheese</td>
+                                  <td align="right">5.49</td>
+                                  <td align="right">7.99</td>
+                                  <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Bologna & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Buffalo Chicken & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pepperoni & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                  </tr>
+                                <tr>
+                                    <td>Salami & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Roast Beef & Gravy</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Bacon & Cheddar</td>
+                                    <td align="right">5.99</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Liverwurst & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Italain Sub</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuna & Cheese</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Cheese Lovers</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Veggie Lovers</td>
+                                    <td align="right">5.49</td>
+                                    <td align="right">7.99</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                            </table>
+
+
                         </div>
                     </div>
                   </div>
@@ -472,14 +827,13 @@
 
             <div class="">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Boars Head Premium Meats</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Boars Head Premium Meats<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Deluxe Ham<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Deluxe Ham<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Hormel Ham<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Spiced Ham<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Boar's Head Turkey<p class="right">$9.99</p></p><br><hr>
@@ -493,24 +847,121 @@
                             <p class="left">Pepperoni<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Pork Roll<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Genoa Salami<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Liverwurst<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Liverwurst<p class="right">$9.99</p></p><br><br> -->
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Deluxe Ham</td>
+                                    <td align="right">9.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Hormel Ham</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Spiced Ham</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Boar's Head Turkey</td>
+                                    <td align="right">9.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Marvel Turkey</td>
+                                    <td align="right">5.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Honey Turkey</td>
+                                    <td align="right">9.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Beef Bacon</td>
+                                    <td align="right">9.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Bologna</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Hard Salami</td>
+                                    <td align="right">8.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Buffalo Chicken</td>
+                                    <td align="right">8.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pastrami</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Roast Beef</td>
+                                    <td align="right">11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pepperoni</td>
+                                    <td align="right">8.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Pork Roll</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Genoa Salami</td>
+                                    <td align="right">8.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Liverwurst</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                            </table>
                             
                         </div>
                     </div>
                   </div>
-                  <div class="col-sm">
+                  <div class="col-sm menu-div-content">
                     <div>
                         <br>
-                        <h3 class="menu-heading sticky-top">Deli Cheeses</h3>
-                        <br>
+                        <h3 class="menu-heading sticky-top">Deli Cheeses<hr></h3>
                         <div>
                             <!-- <p class="left"><p class="right"></p></p><br><br> -->
-                            <p class="left">Lol American<p class="right"> $4.99</p></p><br><hr>
+                            <!-- <p class="left">Lol American<p class="right"> $4.99</p></p><br><hr>
                             <p class="left">Swiss<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Provolone<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Mozzarella<p class="right">$9.99</p></p><br><hr>
                             <p class="left">Cheddar<p class="right">$9.99</p></p><br><hr>
-                            <p class="left">Hot pepper Cheese<p class="right">$9.99</p></p><br><br>
+                            <p class="left">Hot pepper Cheese<p class="right">$9.99</p></p><br><br> -->
+
+                            <table class="Item-table" style="width: 100%;">
+                                <tr>
+                                    <td>Boar's Head Yellow American</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Lol American</td>
+                                    <td align="right">7.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Swiss</td>
+                                    <td align="right">7.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Provolone</td>
+                                    <td align="right">7.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Mozzarella</td>
+                                    <td align="right">7.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Cheddar</td>
+                                    <td align="right">7.49</td>
+                                </tr>
+                                <tr>
+                                    <td>Hot pepper Cheese</td>
+                                    <td align="right">7.49</td>
+                                </tr>
+                            </table>
                             
                         </div>
                     </div>
@@ -518,7 +969,57 @@
                 </div>
             </div>
 
+            <footer>
+                <div class="footer-div">
+                    <div class="row">
+                      <div class="col-sm">
+                        <h3>Main Street Deli & Grocery</h3>
+                            240 Main St #76 <br> 
+                            Keansburg, New Jersey 07734 <br><br>
+                        <a style="color:white" href="tel:7324710040">+1 (732) 471-0040</a><br>
+                        <a style="color:white" href="mailto:msdkeansburg@gmail.com">msdkeansburg@gmail.com</a><br>
+    
+                        <br>
+
+
+
+
+                        <div class="row">
+                            
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm" style="padding:5px; padding-left:20px; padding-right:20px">
+                                <a class="btn" style="background-color: blue; color: white; width:100%" href="https://www.facebook.com/tekopatell/" target="_blank">FACEBOOK</a>
+                              </div>
+                            <div class="col-sm" style="padding:5px; padding-left:20px; padding-right:20px">
+                                <a class="btn" style="background-color: orangered; color: white; width:100%" href="https://www.doordash.com/store/main-street-deli-&-grocery-keansburg-781609/" target="_blank">DOORDASH</a>
+                            </div>
+                            <div class="col-sm" style="padding:5px; padding-left:20px; padding-right:20px">
+                                <a class="btn" style="background-color: green; color: white; width:100%" href="https://www.ubereats.com/store/main-street-deli-%26-grocery-240-main-st/I3kt3qAXR5OydDtWnZdSrQ?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk1haW4lMjBTdHJlZXQlMjBEZWxpJTIwJTI2JTIwR3JvY2VyeSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMjA0ZTAyMjBmLTZiMWYtMzhkOC02MzFkLTQzMDljODcxNDM4NyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJ1YmVyX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNDAuNDQzNjUyOSUyQyUyMmxvbmdpdHVkZSUyMiUzQS03NC4xMjk1MDA5JTdE" target="_blank">UBER EATS</a>
+                            </div>
+                            <div class="col-sm" style="padding:5px; padding-left:20px; padding-right:20px">
+                                <a class="btn" style="background-color: red; color: white; width:100%" href="https://www.grubhub.com/restaurant/main-street-deli--grocery-240-main-st-keansburg/2782815" target="_blank">GRUBHUB</a>
+                            </div>
+                        </div>
+                        <br>
+
+
+
+
+                      </div>
+                      <div class="col-sm">
+                        <iframe style="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4291123851895!2d-74.13150208452741!3d40.443638479362015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c23421538c317d%3A0xc4019bca1dd5f7a!2sMain%20Street%20Deli%20%26%20Grocery!5e0!3m2!1sen!2sus!4v1629165368363!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                    </div>
+                    
+                </div>
+            </footer>
+
         </div>
+        
+
    
     </body>
 </html>

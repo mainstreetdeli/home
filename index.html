@@ -143,7 +143,6 @@
 
                 <div class="logo-info">
 
-                    
 
                     <script>
 
@@ -154,34 +153,34 @@
                         if(day>=0 && day<=4){
                             if(hour >= 5 && hour < 21){
                             document.write(
-                            "<h3 class='open-sign'>OPEN</h3><h4 id='demo'>hello</h4><br>"
+                            "<div><h3 class='open-sign' style='display: inline-block;'>OPEN</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                             );
                             }
                             else if (hour >= 21 && hour <22){
                                 document.write(
-                                "<h3 class='closing-soon-sign'>CLOSING SOON</h3> <br>"
+                                "<div><h3 class='closing-soon-sign' style='display: inline-block;'>CLOSING SOON</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                                 );
                             }
                             else{
                                 document.write(
-                                "<h3 class='closed-sign'>CLOSED</h3> <br>"
+                                "<div><h3 class='closed-sign' style='display: inline-block;'>CLOSED</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                                 );
                             }
                         }
                         else if(day > 4){
                             if(hour >= 5 && hour < 23){
                             document.write(
-                            "<h3 class='open-sign'>OPEN</h3> <br>"
+                            "<div><h3 class='open-sign' style='display: inline-block;'>OPEN</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                             );
                             }
                             else if (hour >= 23 && hour <24){
                                 document.write(
-                                "<h3 class='closing-soon-sign'>CLOSING SOON</h3> <br>"
+                                "<div><h3 class='closing-soon-sign' style='display: inline-block;'>CLOSING SOON</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                                 );
                             }
                             else{
                                 document.write(
-                                "<h3 class='closed-sign'>CLOSED</h3> <br>"
+                                "<div><h3 class='closed-sign' style='display: inline-block;'>CLOSED</h3><h4 id='demo' style='display: inline-block; margin-left: 1%; color: grey;'>calculating distance..</h4></div><br>"
                                 );
                             }
                         }
@@ -212,7 +211,7 @@
                                 distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385)
                             ); 
                             // document.write(distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385))
-                            document.getElementById("demo").innerHTML = distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385).toFixed(2);
+                            document.getElementById("demo").innerHTML = distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385).toFixed(2) + " mi";
                         });
 
                         

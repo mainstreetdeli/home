@@ -1,0 +1,93 @@
+.logo-bar{
+    background-color: white;
+    padding-top:20px;
+}
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-size: min(max(30px, 7vw), 60px);
+}
+.logo-info{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.open-sign{
+    width: fit-content;
+    color:white;
+    background-color: lightgreen;
+    padding: 4px;
+}
+.closing-soon-sign{
+    width: fit-content;
+    color:white;
+    background-color: coral;
+    padding: 4px;
+}
+.closed-sign{
+    width: fit-content;
+    color:white;
+    background-color: red;
+    padding: 4px;
+}
+.button{
+    width: 33%;
+    color: white;
+    background-color: teal;
+    border-radius: 0;
+}
+.button:hover{
+    color:white;
+    background-color: turquoise;
+    /* box-shadow: 2px 4px 10px 4px #888888;
+    transition: 0.3s; */
+}
+body{
+    font-family: 'Signika Negative', sans-serif;
+}
+.menu-heading{
+    color: teal;
+    font-size: min(max(30px, 7vw), 50px);
+    background-color: white;
+    padding-top:15px;
+}
+.menu-div-content{
+    padding-left:20px;
+    padding-right:20px;
+}
+.left{
+    float: left;
+    margin-left: 10px;
+}
+.right{
+    float: right;
+}
+.modal{
+    margin-top: 10%;
+}
+.modal-content{
+    padding:10px;
+}
+.popular-item-heading{
+    padding-bottom:15px;
+}
+.popular-images{
+    width: 100%;
+}
+.popular-item-text{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.bottom-left-image{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.footer-div{
+    margin-top:20px;
+    padding:2%;
+    background-color: black;
+    color: white;
+}

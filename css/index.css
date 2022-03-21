@@ -1,6 +1,7 @@
 .logo-bar{
-    background-color: white;
+    background-color: #f1f5f8;
     padding-top:20px;
+    color: #3A5F7C;
 }
 .logo{
     font-family: 'Anton', sans-serif;
@@ -30,22 +31,24 @@
 .button{
     width: 33%;
     color: white;
-    background-color: teal;
+    background-color: #3A5F7C;
     border-radius: 0;
 }
 .button:hover{
     color:white;
-    background-color: turquoise;
+    background-color: #86A3BA;
     /* box-shadow: 2px 4px 10px 4px #888888;
     transition: 0.3s; */
 }
 body{
-    font-family: 'Signika Negative', sans-serif;
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    background-color: #f1f5f8;
 }
 .menu-heading{
-    color: teal;
+    color: #3A5F7C;
     font-size: min(max(30px, 7vw), 50px);
-    background-color: white;
+    background-color: #f1f5f8;
     padding-top:15px;
 }
 .menu-div-content{

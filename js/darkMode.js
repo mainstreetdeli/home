@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var th = document.getElementsByTagName("th");
     var tr = document.getElementsByTagName("td");
 
-    //if(hour >= 20){
+    // Checks time between 8PM till 6AM
+    if(((hour >= 20 && hour <= 23) || (hour >= 0 && hour <= 6))){
 
         // Dim the body of the page
         document.body.style.backgroundColor = "#202124";
@@ -46,4 +47,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         for(i = 0; i < tr.length; i++) {
             tr[i].style.color = "lightgrey";
         }
+    }
 });

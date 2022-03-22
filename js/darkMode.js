@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var hour = today.getHours();
 
     var logo_bar = document.getElementsByClassName("logo-bar");
+    var popular_item_text = document.getElementsByClassName("popular-item-text");
+    var modal = document.getElementsByClassName("modal-content");
     var menu_heading = document.getElementsByClassName("menu-heading");
-    var Item_table = document.getElementsByClassName("Item-table");
 
     var th = document.getElementsByTagName("th");
     var tr = document.getElementsByTagName("td");
@@ -19,6 +20,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         for(i = 0; i < logo_bar.length; i++) {
             logo_bar[i].style.backgroundColor = '#202124';
             logo_bar[i].style.color = '#86A3BA';
+        }
+
+        for(i = 0; i < popular_item_text.length; i++) {
+            popular_item_text[i].style.color = 'lightgrey';
+        }
+
+        for(i = 0; i < modal.length; i++) {
+            modal[i].style.backgroundColor = '#202124';
+            modal[i].style.color = 'lightgrey';
         }
 
         // Dim Menu headings

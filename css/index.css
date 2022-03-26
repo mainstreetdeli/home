@@ -98,3 +98,30 @@ th, td {
 #dark-mode-btn{
     border: white;
 }
+
+@media (prefers-color-scheme: dark) {
+
+    body{
+        background-color: #202124;
+        color: #86A3BA;
+    }
+    .logo-bar{
+        background-color: #202124;
+        color: #86A3BA;
+    }
+    .popular-item-text{
+        color: lightgrey;
+    }
+    .modal-content{
+        background-color: #202124;
+        color: lightgrey;
+    }
+    .menu-heading{
+        background-color: #202124;
+        color: #86A3BA;
+    }
+    th, td {
+        color: lightgrey;
+    }
+
+}

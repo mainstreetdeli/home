@@ -1,5 +1,16 @@
+.js-disabled-message-div{
+    background-color: coral;
+    color:white;
+    margin-left:2px;
+    margin-right:2px;
+    padding-left: 4px;
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+}
+
 .logo-bar{
     background-color: #f1f5f8;
+    margin-top: 5px;
     padding-top:20px;
     color: #3A5F7C;
 }

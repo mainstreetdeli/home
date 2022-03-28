@@ -18,10 +18,10 @@ if (typeof (Number.prototype.toRad) === "undefined") {
 }
 
 navigator.geolocation.getCurrentPosition(function (pos) {
-    console.log(pos);
-    console.log(
-        distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385)
-    );
+    // console.log(pos);
+    // console.log(
+    //     distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385)
+    // );
     // document.write(distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385))
     document.getElementById("demo").innerHTML = distance(pos.coords.longitude, pos.coords.latitude, -74.1315021, 40.4436385).toFixed(2) + " mi";
 }, showError);

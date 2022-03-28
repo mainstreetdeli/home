@@ -2,6 +2,7 @@ name: Health Check
 
 on:
   
+  # Schedules health check job every night at 8pm or 9pm EST / 1pm UTC 
   schedule:
     - cron: '0 1 * * *'
 
@@ -27,7 +28,21 @@ jobs:
             exit 1
           fi
 
-#       - name: Run a multi-line script
-#         run: |
-#           echo Add other actions to build,
-#           echo test, and deploy your project.
+      - name: Send mail
+        if: failure()
+        uses: dawidd6/action-send-mail@v2
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          # username: ${{ secrets.EMAIL_USERNAME }}
+          # password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          # email body as text
+          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+          # comma-separated string, send email to
+          to: bhavinpanchani9@gmail.com
+          # from email name
+          from: automation@msdkeansburg.com

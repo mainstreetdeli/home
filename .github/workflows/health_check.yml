@@ -4,7 +4,9 @@ on:
   
   # Schedules health check job every night at 8pm or 9pm EST / 1pm UTC 
   schedule:
-    - cron: '0 1 * * *'
+    # - cron: '0 1 * * *'
+    # Testing for everyhour
+    - cron: '0 * * * *'  
 
   workflow_dispatch:
 
@@ -28,10 +30,10 @@ jobs:
             exit 1
           fi
 
-      - name: test
-        run: |
-          ABC=$(echo 'console.log("${{ job.status }}".toUpperCase())' | node -);
-          echo $ABC
+#       - name: test
+#         run: |
+#           ABC=$(echo 'console.log("${{ job.status }}".toUpperCase())' | node -);
+#           echo $ABC
           
       - name: Send mail
 #         if: failure()

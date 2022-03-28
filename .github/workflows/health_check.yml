@@ -18,7 +18,14 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run health check script
-        run: sh ./health_check/health_check.sh
+        run: |
+          if curl -I "https://msdkeansburg.com" 2>&1 | grep -w "200" ; then
+            echo "msdkeansburg.com is up"
+            exit 0
+          else
+            echo "msdkeansburg.com is down"
+            exit 1
+          fi
 
 #       - name: Run a multi-line script
 #         run: |

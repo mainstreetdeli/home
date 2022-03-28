@@ -49,7 +49,7 @@ jobs:
           # subject: msdkeansburg.com is DOWN
           # body: "https://msdkeansburg.com is DOWN. \nFew things to checks \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
           subject: "${{ job.status }} : Health check for msdkeansburg.com"
-          body: "Health check for https://msdkeansburg.com has ${{ job.status }}. \n\nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
+          body: "<h1>Health check for https://msdkeansburg.com has ${{ job.status }}.</h1> \n\nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
           # comma-separated string, send email to
           to: ${{ secrets.BHAVIN_EMAIL}}
           from: MSD Keansburg Automation

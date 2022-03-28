@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  build:
+  health_check:
 
     runs-on: ubuntu-latest
 

@@ -1,11 +1,9 @@
 name: Health Check
 
 on:
-  
-  # Schedules health check job every night at 8pm or 9pm EST / 1pm UTC 
+
+  # Runs jobs every one hour
   schedule:
-    # - cron: '0 1 * * *'
-    # Testing for every hour
     - cron: '0 * * * *'  
 
   workflow_dispatch:
@@ -31,8 +29,7 @@ jobs:
           fi
           
       - name: Send mail
-#         if: failure()
-        if: always()
+        if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -44,9 +41,7 @@ jobs:
             <html>
               <body>
                 <h3>Health Check ${{ job.status }}</h3>
-                <br>
                 <p>https://msdkeansburg.com is not reachable</p>
-                <br>
                 <p>Below are some troubleshooting tips</p>
                 <ul>
                   <li>Verify if there are any outage on Github or Github Pages.</li>

@@ -30,7 +30,7 @@ jobs:
 
       - name: test
         run: |
-          ABC=$(echo 'console.log(${{ job.status }}.toUpperCase())' | node -);
+          ABC=$(echo 'console.log("${{ job.status }}".toUpperCase())' | node -);
           echo $ABC
           
       - name: Send mail

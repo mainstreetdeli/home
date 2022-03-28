@@ -53,9 +53,10 @@
     <!-- LOADS MENU DATA (acts as a local database) -->
     <script type="text/javascript" src="database/menu.js"></script>
 
-    <script>
-        console.log(menu);
-    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="url=/?nojs=true">
+        Please enable javascript to view the Menu
+    </noscript>
 
 </head>
 
@@ -308,16 +309,20 @@
                         </h3>
                         <div>
                             <table class="Item-table" style="width: 100%;">
-                                <tr align="right">
-                                    <th align="right"></th>
-                                    <th align="right">Roll</th>
-                                    <th align="right">Half Sub</th>
-                                    <th align="right">Whole Sub</th>
-                                </tr>
                                 <script>
                                     var hot_sub_and_sandwiches = menu.hot_sub_and_sandwiches
+
+                                    document.write(
+                                        "<tr align='right'>" +
+                                        "<th align='right'></th>" +
+                                        "<th align='right'>Roll</th>" +
+                                        "<th align='right'>Half Sub</th>" +
+                                        "<th align='right'>Whole Sub</th>"
+                                    )
+
                                     Object.keys(hot_sub_and_sandwiches).forEach(function (key) {
                                         document.write(
+                                            "</tr>" +
                                             "<tr>" +
                                             "<td>" + hot_sub_and_sandwiches[key].name + "</td>" +
                                             "<td align='right'>" + hot_sub_and_sandwiches[key].price.roll + "</td>" +
@@ -339,14 +344,17 @@
                         </h3>
                         <div>
                             <table class="Item-table" style="width: 100%;">
-                                <tr align="right">
-                                    <th align="right"></th>
-                                    <th align="right">Roll</th>
-                                    <th align="right">Half Sub</th>
-                                    <th align="right">Whole Sub</th>
-                                </tr>
                                 <script>
                                     var cold_sub_and_sandwiches = menu.cold_sub_and_sandwiches
+
+                                    document.write(
+                                        "<tr align='right'>" +
+                                        "<th align='right'></th>" +
+                                        "<th align='right'>Roll</th>" +
+                                        "<th align='right'>Half Sub</th>" +
+                                        "<th align='right'>Whole Sub</th>"
+                                    )
+
                                     Object.keys(cold_sub_and_sandwiches).forEach(function (key) {
                                         document.write(
                                             "<tr>" +

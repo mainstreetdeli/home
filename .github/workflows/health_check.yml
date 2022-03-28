@@ -1,0 +1,26 @@
+name: Health Check
+
+on:
+  
+  schedule:
+    - cron: '0 1 * * *'
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Run health check script
+        run: sh ./health_check/health_check.sh
+
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.

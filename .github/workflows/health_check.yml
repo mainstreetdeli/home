@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  health_check:
+  health-check:
 
     runs-on: ubuntu-latest
 
@@ -20,7 +20,7 @@ jobs:
 
       - name: Run health check script
         run: |
-          if curl -I "https://msdkeansburg.com" 2>&1 | grep -w "2011" ; then
+          if curl -I "https://msdkeansburg.com" 2>&1 | grep -w "200" ; then
             echo "msdkeansburg.com is up"
             exit 0
           else
@@ -41,8 +41,8 @@ jobs:
           # body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           # subject: msdkeansburg.com is DOWN
           # body: "https://msdkeansburg.com is DOWN. \nFew things to checks \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
-          subject: "${{ job.status }} : Health check for msdkeansburg.com"
-          body: "Health check for https://msdkeansburg.com is ${{ job.status }}. \n\nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n\n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
+          subject: "${{ job.status.toUpperCase() }} : Health check for msdkeansburg.com"
+          body: "Health check for https://msdkeansburg.com is ${{ job.status }}. \nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
           # comma-separated string, send email to
           to: ${{ secrets.BHAVIN_EMAIL}}
           from: MSD Automation

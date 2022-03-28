@@ -5,7 +5,7 @@ on:
   # Schedules health check job every night at 8pm or 9pm EST / 1pm UTC 
   schedule:
     # - cron: '0 1 * * *'
-    # Testing for everyhour
+    # Testing for every hour
     - cron: '0 * * * *'  
 
   workflow_dispatch:
@@ -49,7 +49,7 @@ jobs:
           # subject: msdkeansburg.com is DOWN
           # body: "https://msdkeansburg.com is DOWN. \nFew things to checks \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
           subject: "${{ job.status }} : Health check for msdkeansburg.com"
-          body: "Health check for https://msdkeansburg.com is ${{ job.status }}. \nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
+          body: "Health check for https://msdkeansburg.com has ${{ job.status }}. \n\nBELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
           # comma-separated string, send email to
           to: ${{ secrets.BHAVIN_EMAIL}}
-          from: MSD Automation
+          from: MSD Keansburg Automation

@@ -44,9 +44,7 @@ jobs:
             <html>
               <body>
                 <h3>Health Check ${{ job.status }}</h3>
-                <br>
                 <p>https://msdkeansburg.com is not reachable</p>
-                <br>
                 <p>Below are some troubleshooting tips</p>
                 <ul>
                   <li>Verify if there are any outage on Github or Github Pages.</li>

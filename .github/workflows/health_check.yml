@@ -28,11 +28,28 @@ jobs:
             exit 1
           fi
 
+#       - name: Send mail
+#         if: failure()
+#         uses: dawidd6/action-send-mail@v3
+#         with:
+#           server_address: smtp.mail.yahoo.com
+#           server_port: 465
+#           username: ${{ secrets.MSD_EMAIL }}
+#           password: ${{ secrets.MSD_EMAIL_PASSWORD }}
+#           # subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+#           # body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+#           subject: msdkeansburg.com is DOWN
+#           body: "https://msdkeansburg.com is DOWN. \nFew things to checks \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
+#           # comma-separated string, send email to
+#           to: ${{ secrets.BHAVIN_EMAIL}}
+#           from: automation@msdkeansburg.com
+
+      # Gmail has privacy issues. Not able to send email on failure at this time 
       - name: Send mail
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.mail.yahoo.com
+          server_address: smtp.gmail.com
           server_port: 465
           username: ${{ secrets.MSD_EMAIL }}
           password: ${{ secrets.MSD_EMAIL_PASSWORD }}
@@ -43,20 +60,3 @@ jobs:
           # comma-separated string, send email to
           to: ${{ secrets.BHAVIN_EMAIL}}
           from: automation@msdkeansburg.com
-
-      # Gmail has privacy issues. Not able to send email on failure at this time 
-      # - name: Send mail
-      #   if: failure()
-      #   uses: dawidd6/action-send-mail@v3
-      #   with:
-      #     server_address: smtp.gmail.com
-      #     server_port: 465
-      #     username: ${{ secrets.MSD_EMAIL }}
-      #     password: ${{ secrets.MSD_EMAIL_PASSWORD }}
-      #     # subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
-      #     # body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-      #     subject: msdkeansburg.com is DOWN
-      #     body: "https://msdkeansburg.com is DOWN. \nFew things to checks \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
-      #     # comma-separated string, send email to
-      #     to: ${{ secrets.BHAVIN_EMAIL}}
-      #     from: automation@msdkeansburg.com

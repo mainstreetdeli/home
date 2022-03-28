@@ -19,7 +19,7 @@ jobs:
 
       - name: Run health check script
         run: |
-          if curl -I "https://msdkeansburg.com" 2>&1 | grep -w "200" ; then
+          if curl -I "https://msdkeansburg.com" 2>&1 | grep -w "2011" ; then
             echo "msdkeansburg.com is up"
             exit 0
           else

@@ -41,6 +41,12 @@ jobs:
           password: ${{ secrets.MSD_EMAIL_PASSWORD }}
           subject: "${{ job.status }} : Health check for msdkeansburg.com"
           # body: "Health check for https://msdkeansburg.com has ${{ job.status }}. BELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
-          html_body: <h1>Health check for https://msdkeansburg.com has ${{ job.status }}.<h1>
+          html_body: 
+            <h3>Health check for https://msdkeansburg.com has ${{ job.status }}.<h3>
+            <p>BELOW ARE INSTRUCTIONS IF TEST FAILED:</p>
+            <ul>
+              <li>Verify if there are any outage on Github or Github Pages.</li>
+              <li>Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test.</li>
+            </ul>  
           to: ${{ secrets.BHAVIN_EMAIL}}
           from: MSD Keansburg Automation

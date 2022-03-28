@@ -28,6 +28,11 @@ jobs:
             exit 1
           fi
 
+      - name: test
+        run: |
+          ABC=$(echo 'console.log(${{ job.status }}.toUpperCase())' | node -);
+          echo $ABC
+          
       - name: Send mail
 #         if: failure()
         if: always()

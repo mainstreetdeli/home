@@ -39,8 +39,20 @@ jobs:
           server_port: 465
           username: ${{ secrets.MSD_EMAIL }}
           password: ${{ secrets.MSD_EMAIL_PASSWORD }}
-          subject: "${{ job.status }} : Health check for msdkeansburg.com"
-          # body: "Health check for https://msdkeansburg.com has ${{ job.status }}. BELOW ARE INSTRUCTIONS IF TEST FAILED: \n1) Verify if there are any outage on Github or Github Pages. \n2) Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test."
-          html_body: file://health_check_email.html
+          subject: "${{ job.status }}"
+          html_body:
+            <html>
+              <body>
+                <h3>Health Check ${{ job.status }}</h3>
+                <br>
+                <p>https://msdkeansburg.com is not reachable</p>
+                <br>
+                <p>Below are some troubleshooting tips</p>
+                <ul>
+                  <li>Verify if there are any outage on Github or Github Pages.</li>
+                  <li>Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test.</li>
+                </ul>
+              </body>
+            </html>
           to: ${{ secrets.BHAVIN_EMAIL}}
           from: MSD Keansburg Automation

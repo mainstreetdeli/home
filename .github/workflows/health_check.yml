@@ -32,17 +32,14 @@ jobs:
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
-          # mail server settings
           server_address: smtp.gmail.com
           server_port: 465
-          # user credentials
           username: ${{ secrets.MSD_EMAIL }}
           password: ${{ secrets.MSD_EMAIL_PASSWORD }}
-          # email subject
-          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
-          # email body as text
-          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+          # subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          # body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+          subject: msdkeansburg.com is DOWN
+          body: https:msdkeansburg.com is DOWN. \nFew things to checks. \n1. Verify if there are any outage on Github or Github Pages. \n2. Please check if SSL is valid or expired. As SSL (https) needs to be valid for this test.
           # comma-separated string, send email to
           to: ${{ secrets.BHAVIN_EMAIL}}
-          # from email name
           from: automation@msdkeansburg.com

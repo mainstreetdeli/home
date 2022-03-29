@@ -44,7 +44,7 @@
     color: white;
     background-color: #3A5F7C;
     border-radius: 0;
-    font-family: 'Antonio', sans-serif;
+    /* font-family: 'Antonio', sans-serif; */
 }
 .button:hover{
     color:white;
@@ -101,6 +101,7 @@ th, td {
     padding-top: 10px;
     padding-bottom: 10px;
     color: black;
+    font-weight: 450;
 }
 .footer-div{
     margin-top:20px;
@@ -136,6 +137,7 @@ th, td {
     }
     th, td {
         color: lightgrey;
+        font-weight: 400;
     }
 
 }

@@ -50,7 +50,7 @@
     border-radius: 0;
     overflow: hidden;
     white-space: nowrap;
-    font-size: min(max(18px, 10vw), 14px);
+    font-size: min(max(18px, 10vw), 16px);
     /* font-family: 'Antonio', sans-serif; */
 }
 .button:hover{

@@ -39,11 +39,18 @@
     background-color: red;
     padding: 4px;
 }
+.test-div{
+    overflow: hidden;
+    white-space: nowrap;
+}
 .button{
     width: 33%;
     color: white;
     background-color: #3A5F7C;
     border-radius: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: min(max(18px, 10vw), 14px);
     /* font-family: 'Antonio', sans-serif; */
 }
 .button:hover{

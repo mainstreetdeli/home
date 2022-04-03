@@ -350,27 +350,27 @@ menu = {
     boars_head_premium_meats: {
         ham: {
             name: "Deluxe Ham",
-            price: 11.99
+            price: 10.99
         },
         hormel_ham: {
             name: "Hormel Ham",
-            price: 7.99
+            price: 6.99
         },
         spiced_ham: {
             name: "Spiced Ham",
-            price: 9.99
+            price: 8.99
         },
         turkey: {
             name: "Boar's Head Turkey",
-            price: 11.99
+            price: 10.99
         },
-        marvel_turkey: {
-            name: "Marvel Turkey",
-            price: 7.99
+        hormel_turkey: {
+            name: "Hormel Turkey",
+            price: 6.99
         },
         honey_turkey: {
             name: "Honey Turkey",
-            price: 11.99
+            price: 10.99
         },
         beef_bacon: {
             name: "Beef Bacon",
@@ -378,11 +378,11 @@ menu = {
         },
         bologna: {
             name: "Bologna",
-            price: 9.99
+            price: 8.99
         },
         hard_salami: {
             name: "Hard Salami",
-            price: 9.99
+            price: 10.99
         },
         buffalo_chicken: {
             name: "Buffalo Chicken",
@@ -398,50 +398,50 @@ menu = {
         },
         pepperoni: {
             name: "Pepperoni",
-            price: 9.99
+            price: 10.99
         },
         pork_roll: {
             name: "Pork Roll",
-            price: 9.99
+            price: 9.49
         },
         genoa_salami: {
             name: "Genoa Salami",
-            price: 9.99
+            price: 10.99
         },
         liverwurst: {
             name: "Liverwurst",
-            price: 9.99
+            price: 8.99
         }
     },
 
     deli_cheeses: {
         yellow_american: {
             name: "Boar's Head Yellow American",
-            price: 8.99
+            price: 7.99
         },
         lol_american: {
             name: "Lol American",
-            price: 9.99
+            price: 8.99
         },
         swiss: {
             name: "Swiss",
-            price: 8.49
+            price: 9.49
         },
         provolone: {
             name: "Provolone",
-            price: 8.49
+            price: 9.49
         },
         mozzarella: {
             name: "Mozzarella",
-            price: 8.49
+            price: 9.49
         },
         cheddar: {
             name: "Cheddar",
-            price: 8.49
+            price: 9.49
         },
         hot_pepper_cheese: {
             name: "Hot pepper Cheese",
-            price: 8.49
+            price: 9.49
         }
     }
 }

@@ -101,6 +101,7 @@ body{
 }
 .popular-item-text-description{
     font-style: italic;
+    font-size: 90%;
     color: grey;
     margin-top: -8px;
     margin-bottom: 25px;

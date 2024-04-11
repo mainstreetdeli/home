@@ -86,16 +86,32 @@ body{
 .modal{
     margin-top: 10%;
 }
+.modal-title{
+    color: white;
+    background-color: 3A5F7C;
+    margin-bottom: 4px;
+    padding-top: 8px;
+}
 .modal-content{
     padding:10px;
 }
 .store-hours-table {
+    width: 100%;
     border-collapse: collapse;
-    width: 50%;
-    margin: 0 auto;
+}
+.store-hours-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.store-hours-table th, .store-hours-table td {
+    padding: 10px;
+    text-align: center;
+}
+.store-hours-table th {
+    background-color: #4CAF50;
+    color: white;
 }
 .store-hours-table-td {
-    text-align:center;
+    font-weight: bold;
 }
 .popular-item-heading{
     padding-bottom:15px;

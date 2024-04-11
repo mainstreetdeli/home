@@ -97,7 +97,6 @@ body{
 }
 .store-hours-table {
     width: 100%;
-    border-collapse: collapse;
 }
 .store-hours-table tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -109,9 +108,6 @@ body{
 .store-hours-table th {
     background-color: #4CAF50;
     color: white;
-}
-.store-hours-table-td {
-    font-weight: bold;
 }
 .popular-item-heading{
     padding-bottom:15px;

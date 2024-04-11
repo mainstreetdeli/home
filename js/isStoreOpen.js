@@ -5,12 +5,12 @@ var hour = today.getHours();
 var sign;
 var signCssClass;
 
-if (day >= 0 && day <= 4) {
-    if (hour >= 5 && hour < 21) {
+if (day >= 0 && day <= 5) {
+    if (hour >= 5 && hour < 23) {
         sign = "OPEN";
         signCssClass = "open-sign";
     }
-    else if (hour >= 21 && hour < 22) {
+    else if (hour >= 23 && hour < 24) {
         sign = "CLOSING SOON";
         signCssClass = "closing-soon-sign";
     }
@@ -19,8 +19,8 @@ if (day >= 0 && day <= 4) {
         signCssClass = "closed-sign";
     }
 }
-else if (day > 4) {
-    if (hour >= 5 && hour < 23) {
+else if (day > 5) {
+    if (hour >= 7 && hour < 23) {
         sign = "OPEN";
         signCssClass = "open-sign";
     }

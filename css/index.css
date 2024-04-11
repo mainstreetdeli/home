@@ -89,6 +89,14 @@ body{
 .modal-content{
     padding:10px;
 }
+.store-hours-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+.store-hours-table-td {
+    text-align:center;
+}
 .popular-item-heading{
     padding-bottom:15px;
 }

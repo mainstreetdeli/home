@@ -95,6 +95,82 @@ body{
 .modal-content{
     padding:10px;
 }
+.order-online-icons-div{
+    margin-top: 10px;
+    /* border:0.1px solid black; */
+    margin-left:0.1%;
+    margin-right:0.1%;
+}
+.order-online-doordash-div{
+    margin:1px;
+    background-color: #f2f2f2;
+}
+.order-online-ubereats-div{
+    margin:1px;
+    background-color: #f2f2f2;
+}
+.order-online-grubhub-div{
+    margin:1px;
+    background-color: #f2f2f2;
+}
+.order-online-doordash-div:hover{
+    background-color: #FF3008;
+    .order-online-doordash{
+        color: white;
+    }
+    .order-online-doordash-span:hover{
+        color:white;
+    }
+}
+.order-online-ubereats-div:hover{
+    background-color: #06C167;
+    /* .order-online-ubereats{
+        color: white;
+    }
+    .order-online-ubereats-span:hover{
+        color:white;
+    } */
+}
+.order-online-grubhub-div:hover{
+    background-color: #F63440;
+    .order-online-grubhub{
+        color: white;
+    }
+    .order-online-grubhub-span:hover{
+        color:white;
+    }
+}
+.order-online-doordash{
+    color:black;
+}
+.order-online-ubereats{
+    color:black;
+}
+.order-online-grubhub{
+    color:black;
+}
+.order-online-doordash-span{
+    width: 63px;
+    height: 63px;
+}
+.order-online-ubereats-span{
+    width: 63px;
+    height: 63px;
+}
+.order-online-grubhub-span{
+    width: 63px;
+    height: 63px;
+}
+.order-online-doordash-span:hover{
+    color:black;
+}
+.order-online-ubereats-span:hover{
+    color:black;
+}
+.order-online-grubhub-span:hover{
+    color:black;
+}
+
 .store-hours-table {
     width: 100%;
 }
@@ -172,6 +248,37 @@ th, td {
     th, td {
         color: lightgrey;
         font-weight: 400;
+    }
+
+    .order-online-doordash-div{
+        margin:1px;
+        background-color: #202124;
+    }
+    .order-online-ubereats-div{
+        margin:1px;
+        background-color: #202124;
+    }
+    .order-online-grubhub-div{
+        margin:1px;
+        background-color: #202124;
+    }
+    .order-online-ubereats-div:hover{
+        background-color: #06C167;
+        .order-online-ubereats{
+            color: black;
+        }
+        .order-online-ubereats-span:hover{
+            color:black;
+        }
+    }
+    .order-online-doordash{
+        color:lightgrey;
+    }
+    .order-online-ubereats{
+        color:lightgrey;
+    }
+    .order-online-grubhub{
+        color:lightgrey;
     }
 
 }

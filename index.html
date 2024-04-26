@@ -115,7 +115,40 @@
 
                         <a class="btn button" href="tel:7324710040" style="float: left;">CALL US</a>
 
-                        <button class="btn button" data-bs-target=".bd-example-modal-lg" data-bs-toggle="modal"
+                        <button class="btn button" data-bs-target="#orderModal" data-bs-toggle="modal" type="button">ORDER ONLINE</button>
+
+                        <div aria-hidden="true" aria-labelledby="myLargeModalLabel2" class="modal fade" id="orderModal" role="dialog" tabindex="-1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-title">
+                                        <h2>ORDER ONLINE</h2>
+                                    </div>
+
+                                    <div class="row text-center order-online-icons-div">
+                                        <div class="col-sm order-online-doordash-div">
+                                            <a href="https://www.doordash.com/store/main-street-deli-&-grocery-keansburg-781609/" 
+                                                class="order-online-doordash" target="_blank">
+                                                    <span class="iconify order-online-doordash-span" data-height="54" data-width="54" data-icon="simple-icons:doordash"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm order-online-ubereats-div">
+                                            <a href="https://www.ubereats.com/store/main-street-deli-%26-grocery-240-main-st/I3kt3qAXR5OydDtWnZdSrQ?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk1haW4lMjBTdHJlZXQlMjBEZWxpJTIwJTI2JTIwR3JvY2VyeSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMjA0ZTAyMjBmLTZiMWYtMzhkOC02MzFkLTQzMDljODcxNDM4NyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJ1YmVyX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNDAuNDQzNjUyOSUyQyUyMmxvbmdpdHVkZSUyMiUzQS03NC4xMjk1MDA5JTdE" 
+                                                class="order-online-ubereats" target="_blank">
+                                                    <span class="iconify order-online-ubereats-span" data-height="45" data-width="45" data-icon="simple-icons:ubereats"></span>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm order-online-grubhub-div">
+                                            <a href="https://www.grubhub.com/restaurant/main-street-deli--grocery-240-main-st-keansburg/2782815" 
+                                                class="order-online-grubhub" target="_blank">
+                                                    <span class="iconify order-online-grubhub-span" data-height="75" data-width="75" data-icon="simple-icons:grubhub"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn button" style="float: right;" data-bs-target=".bd-example-modal-lg" data-bs-toggle="modal"
                             type="button">STORE HOURS
                         </button>
 
@@ -171,9 +204,9 @@
                         </div>
 
                         <!-- <input type="hidden" name="saddr"/> -->
-                        <input name="daddr" type="hidden" value="240 Main St, Keansburg, NJ 07734" />
+                        <!-- <input name="daddr" type="hidden" value="240 Main St, Keansburg, NJ 07734" />
                         <input class="btn button" onclick="getLocation()" style="float: right;" type="submit"
-                            value="DIRECTIONS" />
+                            value="DIRECTIONS" /> -->
                         <script></script>
                     </form>
                 </div>

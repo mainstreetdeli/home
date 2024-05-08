@@ -83,10 +83,10 @@ body{
 .right{
     float: right;
 }
-.modal{
+#orderModal, #storeHoursModal{
     margin-top: 10%;
 }
-.modal-title{
+.order-online-modal-title, .store-hours-modal-title{
     color: white;
     background-color: 3A5F7C;
     margin-bottom: 4px;

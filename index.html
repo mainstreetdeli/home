@@ -1,11 +1,13 @@
 <html>
 
 <head>
-    <title>Main Street Deli | Menu</title>
+    <title>(Redirecting...) Main Street Deli | Menu</title>
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <meta charset="UTF-8">
+    <!-- Redirect to new Website -->
+    <meta http-equiv="refresh" content="0; URL=https://nrsgo.com/msd_main_street_deli">
     <meta
         content="Main Street Deli & Grocery. Address: 240 Main Street #76, Keansburg, NJ 07734. Phone: 7324710040. Email: msdkeansburg@gmail.com. Popular items: Titan Tower, Mighty Mustang"
         name="description">
@@ -49,6 +51,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
     <!--  GOOGLE SEARCH CONSOLE VERIFICATION  -->
@@ -75,6 +82,30 @@
             </div>
         </noscript>
 
+        <div class="modal bd-example-modal-lg" id="redirectModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Redirecting...</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                </div>
+                <div class="modal-body">
+                  <p>If you are not redirected automatically, <a type="button" href="https://nrsgo.com/msd_main_street_deli">Click here</a></p>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                  <!-- <a type="button" class="btn btn-primary" href="https://nrsgo.com/msd_main_street_deli">Click here</a> -->
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+        <script>
+            $('#redirectModal').modal('show')
+        </script>
+
         <div class=" logo-bar">
             <h1 class="logo">Main Street Deli & Grocery</h1>
 
@@ -87,7 +118,7 @@
                 <script src="js/isStoreOpen.js"></script>
 
                 <!-- Calculates Distance Store and customer -->
-                <script src="js/calculateDistance.js"></script>
+                <!-- <script src="js/calculateDistance.js"></script> -->
 
                 <!-- Enables Dark Mode after 8 PM -->
                 <!-- <script src="js/darkMode.js"></script> -->
@@ -120,7 +151,7 @@
                         <div aria-hidden="true" aria-labelledby="myLargeModalLabel2" class="modal fade" id="orderModal" role="dialog" tabindex="-1">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-title">
+                                    <div class="modal-title order-online-modal-title">
                                         <h2>ORDER ONLINE</h2>
                                     </div>
 
@@ -148,15 +179,15 @@
                             </div>
                         </div>
 
-                        <button class="btn button" style="float: right;" data-bs-target=".bd-example-modal-lg" data-bs-toggle="modal"
+                        <button class="btn button" style="float: right;" data-bs-target="#storeHoursModal" data-bs-toggle="modal"
                             type="button">STORE HOURS
                         </button>
 
                         <div aria-hidden="true" aria-labelledby="myLargeModalLabel"
-                            class="modal fade bd-example-modal-lg" role="dialog" tabindex="-1">
+                            class="modal fade bd-example-modal-lg" id="storeHoursModal" role="dialog" tabindex="-1">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-title">
+                                    <div class="modal-title store-hours-modal-title">
                                         <h2>STORE HOURS</h2>
                                         <!-- <hr> -->
                                     </div>
